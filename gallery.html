@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="aboutme.html" class="nav-btn">About Me</a>
+        <a href="socialmedia.html" class="nav-btn">Social Media</a>
+        <a href="hobby.html" class="nav-btn">Hobby</a>
+        <a href="education.html" class="nav-btn">Education</a>
+        <a href="gallery.html" class="nav-btn active">Gallery</a>
+    </nav>
+
+    <!-- Scroll Controls -->
+    <div class="scroll-controls">
+        <button class="scroll-btn" onclick="scrollPage('up')">↑</button>
+        <button class="scroll-btn" onclick="scrollPage('down')">↓</button>
+    </div>
+
+    <!-- Page Navigation Controls -->
+    <div class="page-nav-controls">
+        <a href="education.html" class="page-nav-btn">←</a>
+        <button class="page-nav-btn" disabled>→</button>
+    </div>
+
+    <!-- Gallery Page Content -->
+    <div class="page active">
+        <div class="content-page">
+            <h2 class="page-title">My Gallery 📸</h2>
+            <div class="page-content">
+                <p>Here's a collection of my favorite moments, creations, and aesthetic captures! ✨</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">🌸</div>
+                    <div class="gallery-item">🦋</div>
+                    <div class="gallery-item">🌈</div>
+                    <div class="gallery-item">🌟</div>
+                    <div class="gallery-item">🎨</div>
+                    <div class="gallery-item">🌙</div>
+                    <div class="gallery-item">🌺</div>
+                    <div class="gallery-item">🎭</div>
+                    <div class="gallery-item">🎪</div>
+                    <div class="gallery-item">🎨</div>
+                    <div class="gallery-item">🌻</div>
+                    <div class="gallery-item">🌷</div>
+                </div>
+                <br>
+                <a href="index.html" class="back-btn">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
