@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="ladybug">
+            <div class="spot spot1"></div>
+            <div class="spot spot2"></div>
+            <div class="spot spot3"></div>
+            <div class="spot spot4"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-btn active">Home</a>
+        <a href="aboutme.html" class="nav-btn">About Me</a>
+        <a href="socialmedia.html" class="nav-btn">Social Media</a>
+        <a href="hobby.html" class="nav-btn">Hobby</a>
+        <a href="education.html" class="nav-btn">Education</a>
+        <a href="gallery.html" class="nav-btn">Gallery</a>
+    </nav>
+
+    <!-- Scroll Controls -->
+    <div class="scroll-controls">
+        <button class="scroll-btn" onclick="scrollPage('up')">↑</button>
+        <button class="scroll-btn" onclick="scrollPage('down')">↓</button>
+    </div>
+
+    <!-- Page Navigation Controls -->
+    <div class="page-nav-controls">
+        <button class="page-nav-btn" disabled>←</button>
+        <a href="aboutme.html" class="page-nav-btn">→</a>
+    </div>
+
+    <!-- Home Page Content -->
+    <div class="page active">
+        <h1 class="main-title">Welcome to My World ✨</h1>
+        
+        <div class="landscape-image">
+            <div class="doodle">[ Your Aesthetic Image Here ]</div>
+        </div>
+
+        <p class="intro-text">
+            Welcome to my aesthetic corner of the internet! This website is a creative space where I share my journey, 
+            passions, and the things that make me smile. Here you'll find everything about me - from my daily adventures 
+            to my creative hobbies and favorite memories. Take your time exploring each section, and I hope you enjoy 
+            getting to know me through these pages. Let's embark on this colorful journey together! 🌟
+        </p>
+
+        <!-- Simple Rectangle Buttons - ONLY ON HOME PAGE -->
+        <div class="home-buttons">
+            <a href="aboutme.html" class="home-btn">✨ About Me</a>
+            <a href="socialmedia.html" class="home-btn">💫 Social Media</a>
+            <a href="hobby.html" class="home-btn">🎨 Hobbies</a>
+            <a href="education.html" class="home-btn">📚 Education</a>
+            <a href="gallery.html" class="home-btn">📸 Gallery</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
