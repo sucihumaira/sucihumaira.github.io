@@ -9,19 +9,22 @@ body {
     background-color: #F0EAD6; /* Warna Nude/Beige Pucat */
 }
 
-/* 2. Gaya untuk Bar Navigasi (Header Nude dan Melekat) */
+/* Navigation */
 nav {
-    background-color: #E6DBC9; /* Warna Nude yang sedikit lebih gelap untuk header */
-    padding: 10px 0;
-    text-align: center;
-    
-    /* Penting: Ini menjadikan header anda kekal di atas skrin */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
-    /* Bayangan untuk visual */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background-color: #E6DBC9; /* Warna Nude yang sedikit lebih gelap untuk header */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0; /* BARU: Kunci ke kiri */
+    right: 0; /* BARU: Kunci ke kanan */
+    width: 100%; /* BARU: Ambil lebar penuh */
+    padding: 30px 40px;
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center; /* PENTING: Untuk memusatkan butang navigasi */
 }
 
 /* 3. Gaya untuk Butang Navigasi (Menyesuaikan warna ke tema Nude) */
@@ -36,7 +39,15 @@ nav {
     background-color: #A36B5F; /* Warna Merah Nude/Terakota */
     transition: background-color 0.3s;
 }
-
+/* Untuk skrin yang sangat kecil (contoh: telefon bimbit) */
+@media (max-width: 768px) {
+    .nav-btn {
+        /* Kurangkan saiz butang untuk muat */
+        padding: 8px 10px; 
+        margin: 0 2px;
+        font-size: 14px;
+    }
+}
 .nav-btn:hover {
     background-color: #8C5B50; 
 }
@@ -46,10 +57,12 @@ nav {
 }
 
 body {
-    font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #E8D5C4 0%, #F5E6D8 100%);
-    color: #4A4A4A;
-    overflow-x: hidden;
+    font-family: 'Georgia', serif;
+    /* PENTING: Gantikan laluan dan tambahkan sifat kawalan saiz */
+    background: #F0EAD6 url('images/latar_belakang_anda.jpg') no-repeat center center fixed; 
+    background-size: cover; /* INI KAWAL GAMBAR SUPAYA MUAT */
+    color: #4A4A4A;
+    overflow-x: hidden;
 }
 
 /* Loading Screen */
@@ -431,6 +444,15 @@ nav {
 
 .gallery-item:hover {
     transform: scale(1.05);
+}
+
+.gallery-item img {
+    /* Peraturan ini akan diaplikasikan kepada SEMUA 20 gambar */
+    width: 100%;       
+    height: 100%;      
+    object-fit: cover; 
+    border-radius: 20px;
+    /* ... dsb. ... */
 }
 
 /* Social Links */
