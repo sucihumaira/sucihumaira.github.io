@@ -4,26 +4,22 @@
     box-sizing: border-box;
 }
 
-* 1. Latar Belakang Seluruh Halaman (Nude) */
-body {
-    background-color: #F0EAD6; /* Warna Nude/Beige Pucat */
-}
 
 /* Navigation */
 nav {
 background-color: #E6DBC9; /* Warna Nude yang sedikit lebih gelap untuk header */
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0; /* BARU: Kunci ke kiri */
+   
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0; /* BARU: Kunci ke kiri */
     right: 0; /* BARU: Kunci ke kanan */
     width: 100%; /* BARU: Ambil lebar penuh */
-    padding: 30px 40px;
-    z-index: 1000;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    padding: 30px 40px;
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
     justify-content: center; /* PENTING: Untuk memusatkan butang navigasi */
 }
 
@@ -43,26 +39,26 @@ background-color: #E6DBC9; /* Warna Nude yang sedikit lebih gelap untuk header *
 @media (max-width: 768px) {
     .nav-btn {
         /* Kurangkan saiz butang untuk muat */
-        padding: 8px 10px; 
+        padding: 8px 10px;
         margin: 0 2px;
         font-size: 14px;
     }
 }
 .nav-btn:hover {
-    background-color: #8C5B50; 
+    background-color: #8C5B50;
 }
 
 .nav-btn.active {
-    background-color: #6D4C41; 
+    background-color: #6D4C41;
 }
 
 body {
-    font-family: 'Georgia', serif;
-    /* PENTING: Gantikan laluan dan tambahkan sifat kawalan saiz */
-    background: #F0EAD6 url('images/latar_belakang_anda.jpg') no-repeat center center fixed; 
-    background-size: cover; /* INI KAWAL GAMBAR SUPAYA MUAT */
-    color: #4A4A4A;
-    overflow-x: hidden;
+    font-family: 'Georgia', serif;
+    /* PENTING: Gantikan laluan dan tambahkan sifat kawalan saiz */
+    background: #F0EAD6 url('images/latar_belakang_anda.jpg') no-repeat center center fixed;
+    background-size: cover; /* INI KAWAL GAMBAR SUPAYA MUAT */
+    color: #4A4A4A;
+    overflow-x: hidden;
 }
 
 /* Loading Screen */
@@ -455,6 +451,7 @@ nav {
     /* ... dsb. ... */
 }
 
+
 /* Social Links */
 .social-links {
     display: flex;
@@ -477,7 +474,6 @@ nav {
 .social-link:hover {
     transform: translateX(10px);
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .home-buttons {
@@ -525,3 +521,5 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
+
